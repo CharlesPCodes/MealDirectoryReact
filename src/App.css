@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+body {
+  /* font-family: "Open Sans", sans-serif; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, .card-body>h5 {
+/* font-family: "Lobster", cursive; */
+color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #3046C5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-img-overlay h5 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.site-footer {
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.jumbotron h2 {
+  color: #CEC8FF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-dark {
+  background-color: rgb(6, 135, 255);
+}
+
+.directions{
+  /* font-family: "Lobster", cursive; */
+  font-size: 35px;
+}
+
+
+.App-title {
+  font-size: 50px;
+  padding: 25px 0;
+}
+
+.Timers {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .Timers {
+    flex-direction: column;
+
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 900px) {
+  .Stopwatch {
+    margin-bottom: 40px;
   }
+}
+.Countdown,
+.Stopwatch {
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  padding: 20px;
+  width: 400px;
+  background-color: rgb(22, 27, 31);
+  box-shadow: 0 3px 6px rgb(12, 12, 12);
+}
+.Countdown {
+  padding-top: 10px;
+}
+
+.Countdown-header,
+.Stopwatch-header {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #202b33;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #106ba3;
+}
+.Stopwatch button {
+  padding: 12px 32px;
+  font-size: 20px;
+}
+.Stopwatch-display {
+  padding: 40px 0;
+  font-size: 48px;
+}
+
+.Countdown-display {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.Countdown-display button {
+  margin: 0 15px;
+  border: solid 1px transparent;
+  border-radius: 2px;
+  padding: 4px 16px;
+  color: #ffffff;
+
+  font-size: 16px;
+}
+.Countdown-display button:hover {
+  background-color: #106ba3;
+}
+.Countdown-label {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.Countdown-time {
+  font-size: 36px;
+  margin: 5px 0;
+}
+
+.ovenDirec{
+  color: black;
+  text-align: center;
+}
+
+.nutritionLink{
+  font-size: 2em;
 }

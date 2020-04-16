@@ -1,0 +1,11 @@
+LAST LEFT OFF
+Got Base url + json server set up to pull images and loading for errors
+
+
+
+TODO:
+[] Set up a way to get informatio ie temp, time into the meals db json
+[] Setup form for submisiion
+[] setup link for form page
+
+

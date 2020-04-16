@@ -1,0 +1,19 @@
+'Cmd/Ctrl+Enter' // Triggers `Todo: Toggle Box`
+'Alt+Enter' // Triggers `Todo: Toggle Box`
+'Alt+D' // Triggers `Todo: Toggle Done`
+'Alt+C' // Triggers `Todo: Toggle Cancelled`
+'Alt+S' // Triggers `Todo: Toggle Start`
+'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
+LAST LEFT OFF:
+  ☐ Got Base url + json server set up to pull images and loading for erros
+
+
+
+Todo:
+  ☐ Set up a way to get informatuib ue temp,time into the meals db json @started(20-04-15 20:19)
+  ✔ Set up form for submission @done(20-04-15 20:19)
+  ✔ set up link for form page @done(20-04-15 20:19)
+  ✔ ISSUE NEW ADDS NOT RENDERING TEMP AND TIME @started(20-04-15 21:38) @done(20-04-16 01:12)
+  ☐ add timer to pages
+  ☐ add search function
+  ☐ 
