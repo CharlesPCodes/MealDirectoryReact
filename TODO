@@ -5,15 +5,14 @@
 'Alt+S' // Triggers `Todo: Toggle Start`
 'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
 LAST LEFT OFF:
-  ☐ Got Base url + json server set up to pull images and loading for erros
-
-
 
 Todo:
-  ☐ Set up a way to get informatuib ue temp,time into the meals db json @started(20-04-15 20:19)
+  ✔ Set up a way to get informatuib ue temp,time into the meals db json @started(20-04-15 20:19) @done(20-05-06 17:15)
   ✔ Set up form for submission @done(20-04-15 20:19)
   ✔ set up link for form page @done(20-04-15 20:19)
   ✔ ISSUE NEW ADDS NOT RENDERING TEMP AND TIME @started(20-04-15 21:38) @done(20-04-16 01:12)
-  ☐ add timer to pages
+  ✔ have page reload on bread crumb click @done(20-05-08 18:41)
+  ☐ add timer to pages -- NEED to hook meals into timer so i can call timer number
   ☐ add search function
-  ☐ 
+  ☐ add ability to upload images instead of default selections
+  ☐ add delete button for removal

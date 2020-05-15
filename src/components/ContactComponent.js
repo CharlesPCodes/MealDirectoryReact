@@ -3,7 +3,13 @@ import { Button, Label, Col, Row, Breadcrumb, BreadcrumbItem } from 'reactstrap'
 // import { Control, LocalForm } from 'react-redux-form';
 import { Control, Form } from 'react-redux-form';
 import { Link } from 'react-router-dom'
+
+
 // create function of Contact pass it props parm
+
+function refreshPage(){ 
+    window.location.reload(); 
+}
 class Contact extends Component {
 
     constructor(props) {
@@ -58,20 +64,20 @@ class Contact extends Component {
                             <Col md={10}>
                             <Control.select model=".image" id="image" name="image"
                                         className="form-control"
-                                        placeholder="1"
+                                        // placeholder="1"
                                     >
                                         <option value="images/default.jpg">Default</option>
                                         <option value="images/chicken.jpg">Chicken</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
+                                        <option value="images/vegetables.jpg">Vegetables</option>
+                                        <option value="images/dairy.jpg">Dairy</option>
+                                        <option value="images/protein.jpg">Protein</option>
                                     </Control.select>
                                
                             
                             </Col>
                         </Row>
                         <Row className="form-group">
-                            <Label htmlFor="time" md={2}>time</Label>
+                            <Label htmlFor="time" md={2}>Time</Label>
                             <Col md={10}>
                                 <Control.text model=".time" id="time" name="time"
                                     placeholder="10 - 20 minutes"
@@ -84,7 +90,8 @@ class Contact extends Component {
                             <Label htmlFor="temp" md={2}>Temp</Label>
                             <Col md={10}>
                                 <Control.text model=".temp" id="temp" name="temp"
-                                    placeholder="200F"
+                                    // placeholder="°F"
+                                    defaultValue="°F"
                                     className="form-control"
                                 />
                             </Col>
@@ -106,11 +113,11 @@ class Contact extends Component {
                             </Col>
                         </Row>
                     </Form>
+
                 </div>
                 <Breadcrumb>
-                    <BreadcrumbItem><Link to="/contactus" >ContactUs</Link></BreadcrumbItem>
-                    <BreadcrumbItem><Link to="/home" >Home</Link></BreadcrumbItem>
-                    <BreadcrumbItem active>Meal</BreadcrumbItem>
+                <BreadcrumbItem onClick={ refreshPage } active><Link to="/home">Home </Link></BreadcrumbItem>
+                    <BreadcrumbItem active>Submit Meal</BreadcrumbItem>
                 </Breadcrumb>
             </div>
         )

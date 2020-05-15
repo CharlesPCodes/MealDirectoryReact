@@ -22,10 +22,10 @@ export const postMeal = (meal) =>{
         error => { throw error; }
     )
     .then(response => response.json())
-    .then(alert("Thank you for your feedback" + JSON.stringify(meal)))
+    .then(alert("Thank you for your feedback"))
     .catch(error => {
         console.log('post comment', error.message);
-        alert('Your feedback could not be posted\nError: ' + error.message);
+        alert('Your feedback could not be posted\nError: ');
     });
 }
 

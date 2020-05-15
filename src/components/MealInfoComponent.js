@@ -1,7 +1,6 @@
 import React from 'react';
 import {
-    CardBody,
-    Card, CardImg,  Breadcrumb, BreadcrumbItem, Button, Modal, ModalHeader, ModalBody, Label, Row, Col
+    CardBody, Card, CardImg,  Breadcrumb, BreadcrumbItem, Button, Modal, ModalHeader, ModalBody, Label, Row, Col
 } from 'reactstrap'
 import { Control, LocalForm } from 'react-redux-form'
 import { Link } from 'react-router-dom';
@@ -38,13 +37,17 @@ import { baseUrl } from '../shared/baseUrl';
                     {meals.map(meal => {
                         // const formattedDate = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)));
                         // ISSUE NEW ADDS NOT RENDERING TEMP AND TIME
-                    return(<p className="directions" key={meal.id}>{meal.temp}<br />{meal.time}<br/> {meal.calories}</p>);
+                    return(<p className="directions" key={meal.id}>{meal.temp}<br />{meal.time}<br/> {meal.calories}</p>
+                    );
                     })}
 
                 </div>
             );
         } // otherwise return empty div
         return (<div></div>)
+    }
+    function refreshPage(){ 
+        window.location.reload(); 
     }
     // render the following 
    function MealInfo(props){
@@ -54,7 +57,7 @@ import { baseUrl } from '../shared/baseUrl';
                     <div className="row">
                         <div className="col">
                             <Breadcrumb>
-                                <BreadcrumbItem><Link to="/directory">Meal List</Link></BreadcrumbItem>
+                            <BreadcrumbItem onClick={ refreshPage } active><Link to="/home">Home </Link></BreadcrumbItem>
                                 <BreadcrumbItem active>{props.meals.name}</BreadcrumbItem>
                             </Breadcrumb>
                             <h2>{props.meals.name}</h2>
@@ -71,10 +74,19 @@ import { baseUrl } from '../shared/baseUrl';
         }
         else{ /*IF campsite is not there then return an empty div */
             return(
-                <div></div>
+                <div><h2>Loading your meal</h2></div>
             );
         }
     }
+//  ===================================================================
+
+
+
+
+
+
+// =======================================================================
+
     
 export class MealForm extends React.Component {
         constructor(props) {

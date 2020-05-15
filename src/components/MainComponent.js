@@ -45,7 +45,8 @@ class Main extends Component{
                 info={this.props.meals.meals.filter(info => info.id === +match.params.mealId)}
                 //   postMeal = {this.props.postMeal}
                 />
-              
+      
+           
             )
         }
 
@@ -56,7 +57,6 @@ class Main extends Component{
                     <Route exact path='/mealsdirectory' render={() => <MealDirectory meals={this.props.meals}/>}/>
                     <Route path='/mealsdirectory/:mealId' component={MealWithId} />
                     <Route exact path='/contactus' render={() => <Contact  postMeal={postMeal}/> } />
-
                     <Redirect to='/mealsdirectory'/>
                 </Switch>
             </div>
@@ -65,12 +65,5 @@ class Main extends Component{
     
 
 }
-
-
-
-
-
-
-
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
